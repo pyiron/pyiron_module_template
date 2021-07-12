@@ -1,4 +1,5 @@
-#pyiron_module
+pyiron_module
+=============
 
 This repository is a template for new pyiron modules similar to the existing modules of the 
 pyiron framework, e.g. 
