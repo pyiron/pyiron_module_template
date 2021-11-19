@@ -4,4 +4,5 @@ dependencies:
   - coveralls
   - coverage
   - codacy-coverage
-  - pyiron_module
+  - pyiron_base
+  
