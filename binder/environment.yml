@@ -2,4 +2,5 @@ channels:
 - conda-forge
 dependencies:
 - python
-- pyiron_base
+- pyiron_module
+
