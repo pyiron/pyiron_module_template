@@ -13,6 +13,11 @@ This can be easily achieved by modifying and running the update_module_name.sh s
 
 We usually collect all files relevant for the continuous integration (CI) pipelines in `.ci_support`, 
 while the actual CI workflows are handled by GitHub and stored in `.github`.
+If you are cloning this template *inside* the pyiron GitHub organization, the full CI should work out-of-the-box.
+Otherwise, you will either need to modify the CI workflow files, or your repository will need the following secrets:
+- `DEPENDABOT_WORKFLOW_TOKEN` (GitHub token for an account that has permissions to your repository -- needs to differ from the default `github_token` already available though! In pyiron we have a special [@pyiron_runner account](https://github.com/pyiron-runner) for this purpose.)
+- `PYPI_PASSWORD` (Token generated on PyPi to give access to your account there)
+- `CODACY_PROJECT_TOKEN` (Token generated on Codacy to give access to your account there)
 
 If the licence is free to choose, we use the BSD3 licence packed here.
 
