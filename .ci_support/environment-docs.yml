@@ -1,5 +1,0 @@
-channels:
-  - conda-forge
-dependencies:
-  - nbsphinx
-  #Additionally copy all of your module's dependencies here
