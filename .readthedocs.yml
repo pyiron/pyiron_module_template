@@ -23,4 +23,4 @@ formats: all
 
 # Install pyiron from conda 
 conda:
-  environment: .ci_support/environment-docs.yml
+  environment: docs/environment.yml
