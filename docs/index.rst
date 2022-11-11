@@ -7,3 +7,7 @@
 pyiron_module
 =============
 
+.. toctree::
+   :hidden:
+
+   source/indices.rst
