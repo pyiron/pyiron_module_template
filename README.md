@@ -74,7 +74,7 @@ By default, only a simple API section is included.
 
 ## Publishing your package
 
-If you are inside the pyiron organization or have your own `PYPI_PASSWORD` secret configured, your package will be published on PyPI automatically when you make a new "release" on GitHub.
+If you are inside the pyiron organization or have your own `PYPI_PASSWORD` secret configured, your package will be published on PyPI automatically when you make a new "release" on GitHub -- *as long as* that tag matches the pattern specified in `setup.cfg`; by default any tag that `pyiron_module-`, where `pyiron_module` is replaced with the name of your module. We recommend using semantic versioning so that your first release looks like `pyiron_module-0.0.1`.
 
 Releasing your package on Conda-Forge is slightly more involved, but not too hard (at least for pure python packages).
 See [conda-forge/staged-recipes](https://github.com/conda-forge/staged-recipes) for how to publish it there.
