@@ -1,5 +1,6 @@
 # pip install master
 pip install --no-deps .
+# Note: This produces build and pyiron_module_template.egg-info directories
 
 # clean up
 if [ -d "notebooks" ]; then
@@ -9,9 +10,11 @@ if [ -d "${HOME}/pyiron_module_template" ]; then
     rm -r   ${HOME}/.binder \
             ${HOME}/.ci_support \
             ${HOME}/.github \
+            ${HOME}/build \
             ${HOME}/docs \
             ${HOME}/notebooks \
             ${HOME}/pyiron_module_template \
+            ${HOME}/pyiron_module_template.egg-info \
             ${HOME}/tests \
             ${HOME}/.gitattributes \
             ${HOME}/.gitignore \
