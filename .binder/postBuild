@@ -10,7 +10,7 @@ if [ -d "${HOME}/pyiron_module_template" ]; then
             ${HOME}/.ci_support \
             ${HOME}/.github \
             ${HOME}/docs \
-            ${HOME}/notebooks ${HOME}/LICENSE \
+            ${HOME}/notebooks \
             ${HOME}/pyiron_module_template \
             ${HOME}/tests \
             ${HOME}/.gitattributes \
