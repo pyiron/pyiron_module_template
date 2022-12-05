@@ -62,6 +62,14 @@ dependencies:
   - lammps
 ```
 
+### Label-based CI
+
+Some CI triggers when labels get applied to a PR. 
+In a new repository, you will need to define these labels:
+- `format_black`: Runs black analyis and creates a bot-generated commit to fix any format violations
+- `run_CodeQL`: Runs the external CodeQL analysis (expensive, only do at the end)
+- `run_coverage`: Run all the tests in `tests` and use coveralls to generate a coverage report (also expensive, only run near the end of your PR)
+
 ## Documentation
 
 You should modify this README to reflect the purpose of your new package.
