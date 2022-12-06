@@ -9,6 +9,7 @@ for file in .binder/postBuild \
             docs/index.rst \
             notebooks/version.ipynb \
             tests/unit/test_tests.py \
+            .coveragerc \
             .gitattributes \
             MANIFEST.in \
             setup.cfg \
