@@ -1,4 +1,5 @@
 #!/bin/bash
+# Mac users: You [may first need to install gnu-sed](https://github.com/MigleSur/GenAPI/issues/8)
 
 module_name="pyiron_IntendedModuleName"
 rst_delimit="========================="   # This should be as many '=' as the name length.
