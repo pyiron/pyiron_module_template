@@ -1,9 +1,13 @@
-.. pyiron_module documentation master file
+.. pyiron_module_template documentation master file
 
 .. _index:
 
 
-=============
-pyiron_module
-=============
+======================
+pyiron_module_template
+======================
 
+.. toctree::
+   :hidden:
+
+   source/indices.rst

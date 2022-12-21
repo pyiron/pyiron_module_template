@@ -1,5 +1,6 @@
 channels:
 - conda-forge
 dependencies:
-- pyiron_module
+- ipykernel
 - nbsphinx
+- pyiron_base
