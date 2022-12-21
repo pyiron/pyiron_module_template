@@ -17,11 +17,9 @@ for file in .binder/postBuild \
             setup.py
 do
   sed -i "s/pyiron_module_template/${module_name}/g" ${file}
+  sed -i "s/======================/${rst_delimit}/g" ${file}
 done
 
-file=docs/index.rst
-sed -i "s/pyiron_module_template/${module_name}/g" ${file}
-sed -i "s/======================/${rst_delimit}/g" ${file}
 
 mv pyiron_module_template ${module_name}
 
