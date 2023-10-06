@@ -343,15 +343,15 @@ For the automated versioning we use::
 
 So the configuration of the release is included in setup.cfg::
 
-   https://github.com/pyiron/pyiron_base/blob/master/setup.cfg
+   https://github.com/pyiron/pyiron_base/blob/main/setup.cfg
 
 As the pyiron packages are pure python packages – we use only the Linux Python 3.7 job to build the packages, as defined in the .travis.yml file::
 
-   https://github.com/pyiron/pyiron_base/blob/master/.travis.yml
+   https://github.com/pyiron/pyiron_base/blob/main/.travis.yml
 
 The python 3.7 linux tests therefore takes more time, compared to the other tests on travis.
 
-Just like each other commit to the master branch the tagged releases are pushed to pypi.org and anaconda.org::
+Just like each other commit to the main branch the tagged releases are pushed to pypi.org and anaconda.org::
 
    https://pypi.org/project/pyiron-base/#history
    https://anaconda.org/pyiron/pyiron_base
