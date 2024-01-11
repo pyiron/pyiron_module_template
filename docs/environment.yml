@@ -4,3 +4,4 @@ dependencies:
 - ipykernel
 - nbsphinx
 - pyiron_base
+- myst-parser
