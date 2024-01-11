@@ -2,10 +2,8 @@
 
 .. _index:
 
-
-======================
-pyiron_module_template
-======================
+.. include:: README.md
+   :parser: myst_parser.sphinx_
 
 .. toctree::
    :hidden:
