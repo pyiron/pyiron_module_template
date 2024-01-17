@@ -53,7 +53,11 @@ nbsphinx_thumbnails = {
 }
 
 # The suffix of source filenames.
-source_suffix = '.rst'
+# The suffix of source filenames.
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown'
+}
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
@@ -62,7 +66,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'pyiron'
+project = u'pyiron_module_template'
 copyright = u'2021, Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department ' \
             u'All rights reserved'
 
@@ -240,7 +244,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'pyiron.tex', u'pyiron Documentation',
+  ('index', 'pyiron_module_template.tex', u'pyiron_module_template Documentation',
    u'Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department', 'manual'),
 ]
 
@@ -271,8 +275,8 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index',
-     'pyiron',
-     u'pyiron Documentation',
+     'pyiron_module_template',
+     u'pyiron_module_template Documentation',
      [u'Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department'], 1)
 ]
 
@@ -288,7 +292,7 @@ man_pages = [
 texinfo_documents = [
   ('index',
    'pyiron_module_template',
-   u'pyiron Documentation',
+   u'pyiron_module_template Documentation',
    u'Max-Planck-Institut für Eisenforschung GmbH - Computational Materials Design (CM) Department',
    'pyiron_module_template',
    'One line description of project.',
