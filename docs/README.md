@@ -4,10 +4,9 @@
 
 This repository is a template for new pyiron modules similar to the existing modules of the 
 pyiron framework, e.g. 
-[pyiron_base](https://github.com/pyiron/pyiron_base),
-[pyiron_atomistics](https://github.com/pyiron/pyiron_atomistics),
-and 
-[pyiron_contrib](https://github.com/pyiron/pyiron_contrib).
+[pyiron_workflow](https://github.com/pyiron/pyiron_workflow),
+[pyiron_ontology](https://github.com/pyiron/pyiron_ontology),
+etc.
 
 Within this repository, the new module is called `pyiron_module_template` which should be renamed to `pyiron_IntendedModuleName`. 
 This can be easily achieved by modifying and running the update_module_name.sh script. 
