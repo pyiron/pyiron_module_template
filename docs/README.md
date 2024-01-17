@@ -80,6 +80,25 @@ At a minimum, we suggest creating a meaningful example notebook in the `notebook
 You can also edit the docs for your package by modifying `docs/index.rst`.
 By default, this README is used as the landing page, and a simple API section is automatically generated.
 
+## Tests
+
+There is space for "benchmark", "integration", and "unit" tests in the `tests/` directory, with dummy tests for each.
+These are run by the default CI, so modify them to suit your needs.
+
+Additionally, the standard CI will attempt to execute all notebooks in the `notebooks/` directory.
+See [`pyiron/actions`]() and the reusable workflows there to learn about modifying the environment for the CI, e.g. to use a different env for notebook runs than for the tests in `tests/`.
+
+Finally, `tests/integration/test_readme.py` shows how example code in the documentation gets tested against its claimed output.
+E.g. if you change this:
+
+```python
+>>> print(2 + 2)
+4
+
+```
+
+To read `5` instead, those tests should fail.
+
 ## Publishing your package
 
 If you are inside the pyiron organization or have your own `PYPI_PASSWORD` secret configured, your package will be published on PyPI automatically when you make a new "release" on GitHub -- *as long as* that tag matches the pattern specified in `setup.cfg`; by default any tag that `pyiron_module_template-`, where `pyiron_module_template` is replaced with the name of your module. We recommend using semantic versioning so that your first release looks like `pyiron_module_template-0.0.1`.
