@@ -31,12 +31,12 @@ The CI will automatically keep environment files read by readthedocs (which will
 In case you need extra environment files for some setups, you can modify the workflows in `.github/workflows`, which accept input variables for the docs, tests, and notebooks environments.
 For example, it's typically good to not make your project depend on the `lammps` package, since this is not available for windows.
 However, you might want to give some demo notebooks that run on MyBinder (a linux environment) and use LAMMPS calculations.
-In this case, you could add a new file `.ci_support/environment-notebooks.yml`, and then edit `.github/workflows/push-pull-main.yml` so that instead of reading 
+In this case, you could add a new file `.ci_support/environment-notebooks.yml`, and then edit `.github/workflows/push-pull.yml` so that instead of reading 
 
 ```yaml
 jobs:
   pyiron:
-    uses: pyiron/actions/.github/workflows/push-pull-main.yml@main
+    uses: pyiron/actions/.github/workflows/push-pull.yml@main
     secrets: inherit
     # All the environment files variables point to .ci_support/environment.yml by default
 ```
@@ -46,7 +46,7 @@ It instead reads
 ```yaml
 jobs:
   pyiron:
-    uses: pyiron/actions/.github/workflows/push-pull-main.yml@main
+    uses: pyiron/actions/.github/workflows/push-pull.yml@main
     secrets: inherit
     with:
       notebooks-env-files: .ci_support/environment.yml .ci_support/environment-notebooks.yml
