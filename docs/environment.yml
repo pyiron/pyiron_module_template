@@ -2,6 +2,8 @@ channels:
 - conda-forge
 dependencies:
 - ipykernel
-- nbsphinx
-- pyiron_base
 - myst-parser
+- nbsphinx
+- sphinx-gallery
+- sphinx-rtd-theme
+- pyiron_base
