@@ -78,7 +78,7 @@ You can look at the other pyiron modules to get a hint for what sort of informat
 At a minimum, we suggest creating a meaningful example notebook in the `notebooks/` directory and creating a MyBinder badge so that people can quickly and easily explore your work.
 
 You can also edit the docs for your package by modifying `docs/index.rst`.
-By default, only a simple API section is included.
+By default, this README is used as the landing page, and a simple API section is automatically generated.
 
 ## Publishing your package
 
