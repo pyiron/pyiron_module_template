@@ -8,4 +8,5 @@
 .. toctree::
    :hidden:
 
+   source/examples.rst
    source/indices.rst
