@@ -37,6 +37,7 @@ from sphinx.ext.apidoc import main
 extensions = [
     'myst_parser',
     'nbsphinx',
+    'sphinx_gallery.load_style',
     'sphinx.ext.mathjax',
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
@@ -46,6 +47,10 @@ extensions = [
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
+
+nbsphinx_thumbnails = {
+    'source/notebooks/example': "_static/pyiron-logo-dark.png",
+}
 
 # The suffix of source filenames.
 source_suffix = '.rst'
