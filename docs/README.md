@@ -86,7 +86,7 @@ There is space for "benchmark", "integration", and "unit" tests in the `tests/` 
 These are run by the default CI, so modify them to suit your needs.
 
 Additionally, the standard CI will attempt to execute all notebooks in the `notebooks/` directory.
-See [`pyiron/actions`]() and the reusable workflows there to learn about modifying the environment for the CI, e.g. to use a different env for notebook runs than for the tests in `tests/`.
+See [`pyiron/actions`](https://github.com/pyiron/actions) and the reusable workflows there to learn about modifying the environment for the CI, e.g. to use a different env for notebook runs than for the tests in `tests/`.
 
 Finally, `tests/integration/test_readme.py` shows how example code in the documentation gets tested against its claimed output.
 E.g. if you change this:
