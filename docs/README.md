@@ -36,7 +36,7 @@ In this case, you could add a new file `.ci_support/environment-notebooks.yml`, 
 ```yaml
 jobs:
   pyiron:
-    uses: pyiron/actions/.github/workflows/push-pull.yml@main
+    uses: pyiron/actions/.github/workflows/push-pull.yml@actions-1.1.0b
     secrets: inherit
     # All the environment files variables point to .ci_support/environment.yml by default
 ```
@@ -46,7 +46,7 @@ It instead reads
 ```yaml
 jobs:
   pyiron:
-    uses: pyiron/actions/.github/workflows/push-pull.yml@main
+    uses: pyiron/actions/.github/workflows/push-pull.yml@actions-1.1.0b
     secrets: inherit
     with:
       notebooks-env-files: .ci_support/environment.yml .ci_support/environment-notebooks.yml
