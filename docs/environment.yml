@@ -6,4 +6,5 @@ dependencies:
 - nbsphinx
 - sphinx-gallery
 - sphinx-rtd-theme
+- versioneer
 - pyiron_base
