@@ -61,6 +61,12 @@ dependencies:
   - lammps
 ```
 
+### Dependencies
+
+The CI for making new releases expects all the `pyproject.toml` dependencies to be fully specified with `==` and the conda dependencies to have their versions specified by `=`, i.e. precisely specifying the version the code here is intended to run on.
+At release time, these dependencies can be relaxed so that new users installing your code may have access to a wider variety of environment possibilities.
+For exact details on this relaxation, check documentation in the [centralized CI](https://github.com/pyiron/actions).
+
 ### Label-based CI
 
 Some CI triggers when labels get applied to a PR. 
