@@ -8,13 +8,12 @@ for file in .binder/postBuild \
             .github/ISSUE_TEMPLATE/*.md \
             docs/conf.py \
             docs/index.rst \
-            notebooks/version.ipynb \
+            notebooks/example.ipynb \
             tests/unit/test_tests.py \
             .coveragerc \
             .gitattributes \
             MANIFEST.in \
-            setup.cfg \
-            setup.py
+            pyproject.toml
 do
   sed -i "s/pyiron_module_template/${module_name}/g" ${file}
   sed -i "s/======================/${rst_delimit}/g" ${file}
@@ -23,6 +22,6 @@ done
 
 mv pyiron_module_template ${module_name}
 
-python -m versioneer setup
+versioneer install --no-vendor
 
 rm update_module_name.sh
