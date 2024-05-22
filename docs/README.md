@@ -9,7 +9,9 @@ pyiron framework, e.g.
 etc.
 
 Within this repository, the new module is called `pyiron_module_template` which should be renamed to `pyiron_IntendedModuleName`. 
-This can be easily achieved by modifying and running the update_module_name.sh script. 
+This can be easily achieved by modifying and running `bash ./update_module_name.sh` script. 
+
+Note that to successfully run the update script, your local environment will need a toml-compliant version of [versioneer](https://github.com/python-versioneer/python-versioneer/blob/master/INSTALL.md)
 
 The licence is free to choose, but as a default the BSD3 licence packed here.
 
