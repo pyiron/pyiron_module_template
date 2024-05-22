@@ -9,6 +9,7 @@ for file in .binder/postBuild \
             docs/conf.py \
             docs/index.rst \
             notebooks/example.ipynb \
+            pyiron_module_template/_version.py \
             tests/unit/test_tests.py \
             .coveragerc \
             .gitattributes \
@@ -21,7 +22,5 @@ done
 
 
 mv pyiron_module_template ${module_name}
-
-versioneer install --no-vendor
 
 rm update_module_name.sh
