@@ -23,6 +23,8 @@ Otherwise, you will either need to modify the CI workflow files, or give your re
 - `PYPI_PASSWORD` (Token generated on PyPi to give access to your account there)
 - `CODACY_PROJECT_TOKEN` (Token generated on Codacy to give access to your account there)
 
+Make sure to go to [Codacy](https://www.codacy.com) and [Coverall](https://coveralls.io) to register your repository.
+
 The default CI setup from [pyiron/actions](github.com/pyiron/actions) makes some assumptions about your directory structure.
 The most important one is that your environment should be specified in `.ci_support/environment.yml`.
 There is a base environment there already, giving dependence on `pyiron_base`.
