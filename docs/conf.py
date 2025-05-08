@@ -140,11 +140,14 @@ modindex_common_prefix = ['vasp.', 'base.', 'lammps.',
 #    raise ImportError("You need to install bootstrap: pip install sphinx_bootstrap_theme")
 #    html_theme = 'default'
 
-try:
-   import sphinx_rtd_theme
-   html_theme = 'sphinx_rtd_theme'
-except ImportError:
-   html_theme = 'default'
+import importlib.util
+
+if importlib.util.find_spec("sphinx_rtd_theme") is not None:
+    # sphinx_rtd_theme is available
+    html_theme = "sphinx_rtd_theme"
+else:
+    # fallback theme
+    html_theme = "alabaster"
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
