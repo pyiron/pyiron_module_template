@@ -69,8 +69,8 @@ What should I know before I get started?
 pyiron developer meetings
 -------------------------
 If you are interested in discussing pyiron's development, we encourage you to virtually
-participate in the weekly pyiron developer meeting at 14:00 german time (GMT+2).
-Check the discussion page for details.
+participate in the weekly pyiron developer meeting. Become an member of the pyiron organization
+and check the discussion page.
 
 How can I contribute?
 =====================
