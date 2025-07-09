@@ -11,3 +11,6 @@ jobs:
   pyiron:
     uses: pyiron/actions/.github/workflows/push-pull.yml@actions-4.0.1
     secrets: inherit
+    with:
+      do-coveralls: false
+      do-codecov: true
