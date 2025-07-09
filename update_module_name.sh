@@ -2,7 +2,8 @@
 # Mac users: You [may first need to install gnu-sed](https://github.com/MigleSur/GenAPI/issues/8)
 
 module_name="pyiron_IntendedModuleName"
-rst_delimit="========================="   # This should be as many '=' as the name length.
+n=${#module_name}
+rst_delimit=$(printf '=%.0s' $(seq 1 $n)) # This should be as many '=' as the name length.
 
 for file in .binder/postBuild \
             .github/ISSUE_TEMPLATE/*.md \
