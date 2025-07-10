@@ -27,7 +27,7 @@ Make sure to go to [Codacy](https://www.codacy.com) and [Coverall](https://cover
 
 The default CI setup from [pyiron/actions](github.com/pyiron/actions) makes some assumptions about your directory structure.
 The most important one is that your environment should be specified in `.ci_support/environment.yml`.
-There is a base environment there already, giving dependence on `pyiron_base`.
+There is a base environment there already, giving dependence on `numpy`.
 The CI will automatically keep environment files read by readthedocs (which will look at `.readthedocs.yml`) and MyBinder (which looks in `.binder`) up-to-date based on this environment file.
 
 In case you need extra environment files for some setups, you can modify the workflows in `.github/workflows`, which accept input variables for the docs, tests, and notebooks environments.
