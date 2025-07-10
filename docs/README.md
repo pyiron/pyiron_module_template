@@ -29,6 +29,7 @@ The default CI setup from [pyiron/actions](github.com/pyiron/actions) makes some
 The most important one is that your environment should be specified in `.ci_support/environment.yml`.
 There is a base environment there already, giving dependence on `numpy`.
 The CI will automatically keep environment files read by readthedocs (which will look at `.readthedocs.yml`) and MyBinder (which looks in `.binder`) up-to-date based on this environment file.
+Additionally, there is a specification of lower bounds in `.ci_support/lower-bounds.yml` which is used in the main push-pull workflow to run tests on older dependencies and to manage lower bounds for the jobs building packages for release.
 
 In case you need extra environment files for some setups, you can modify the workflows in `.github/workflows`, which accept input variables for the docs, tests, and notebooks environments.
 For example, it's typically good to not make your project depend on the `lammps` package, since this is not available for windows.
