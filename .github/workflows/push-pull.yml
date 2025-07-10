@@ -14,3 +14,6 @@ jobs:
     with:
       do-coveralls: false
       do-codecov: true
+      alternate-tests-env-files: .ci_support/lower-bounds.yml
+      alternate-tests-python-version: '3.9'
+      alternate-tests-dir: tests/unit
