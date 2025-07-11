@@ -1,8 +1,9 @@
 [build-system]
 requires = [
-    "pyiron_base",
-    "setuptools",
+    "numpy",
+    "setuptools>=68.0.0",
     "versioneer[toml]==0.29",
+
 ]
 build-backend = "setuptools.build_meta"
 
@@ -11,20 +12,19 @@ name = "pyiron_module_template"
 description = "pyiron_module_template - Your pyiron-like module."
 readme = "docs/README.md"
 keywords = [ "pyiron",]
-requires-python = ">=3.9, <3.13"
+requires-python = ">=3.11, <3.14"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Topic :: Scientific/Engineering",
     "License :: OSI Approved :: BSD License",
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "pyiron_base==0.8.3"
+    "numpy==2.3.1"
 ]
 dynamic = [ "version",]
 authors = [
