@@ -20,6 +20,6 @@ do
 done
 
 
-mv pyiron_module_template ${module_name}
+git mv pyiron_module_template ${module_name}
 
 rm update_module_name.sh
