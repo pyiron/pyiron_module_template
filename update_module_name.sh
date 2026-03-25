@@ -12,8 +12,8 @@ replace_and_log() {
   local file="$3"
   local count
 
-  count=$(grep -oF -- "$from" "$file" | wc -l)
-  if [ "$count" -gt 0 ]; then
+  if grep -qF -- "$from" "$file"; then
+    count=$(grep -oF -- "$from" "$file" | wc -l)
     printf 'Replacing "%s" with "%s" in %s (%s occurrence(s))\n' \
       "$from" "$to" "$file" "$count"
   fi
