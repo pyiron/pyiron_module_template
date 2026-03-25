@@ -30,7 +30,6 @@ for file in .binder/postBuild \
             pyproject.toml
 do
   replace_and_log "pyiron_module_template" "${module_name}" "${file}"
-  replace_and_log "======================" "${rst_delimit}" "${file}"
 done
 
 
