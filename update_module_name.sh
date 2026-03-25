@@ -1,6 +1,9 @@
 #!/bin/bash
 # Mac users: You [may first need to install gnu-sed](https://github.com/MigleSur/GenAPI/issues/8)
 
+set -eu # exit script immediately on any error (e) and if used vars are unset (u)
+set -o pipefail # exit directly if pipeline fails anywhere and don't continue to next command
+
 module_name="pyiron_IntendedModuleName"
 
 replace_and_log() {
